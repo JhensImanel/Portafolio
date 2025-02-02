@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 
+export default {
+  content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
+  darkMode: 'class',
   theme: {
     extend: {},
   },
-  plugins: [],
   fontFamily: {
+    lato: ['Lato', 'sans-serif'],
     body: [
       'Inter',
       'ui-sans-serif',
@@ -42,4 +43,5 @@ export default {
       'Noto Color Emoji',
     ],
   },
+  plugins: [],
 };
